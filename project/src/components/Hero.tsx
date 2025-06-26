@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowDown, Mail, Linkedin, Github } from "lucide-react";
-import profileImage from '../assets/philipus_formal_photo.jpg';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -82,7 +81,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <img
-                src={profileImage}
+                src="/assets/philipus_formal_photo.jpg"
                 alt="Philipus Sanjaya"
                 className="w-80 h-80 rounded-2xl shadow-2xl object-cover"
               />

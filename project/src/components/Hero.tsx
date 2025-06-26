@@ -81,7 +81,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <img
-                src="/assets/philipus_formal_photo.jpg"
+                src="/project/assets/philipus_formal_photo.jpg"
                 alt="Philipus Sanjaya"
                 className="w-80 h-80 rounded-2xl shadow-2xl object-cover"
               />

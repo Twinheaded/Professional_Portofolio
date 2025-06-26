@@ -1,23 +1,27 @@
-import React from 'react';
-import { ArrowDown, Mail, Linkedin, Github } from 'lucide-react';
+import React from "react";
+import { ArrowDown, Mail, Linkedin, Github } from "lucide-react";
+import profileImage from '../assets/philipus_formal_photo.jpg';
 
 const Hero = () => {
   const scrollToAbout = () => {
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById("about");
     if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
+      aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-teal-50">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-teal-50"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
-                Hi, I'm{' '}
+                Hi, I'm{" "}
                 <span className="bg-gradient-to-r from-blue-600 to-teal-600 bg-clip-text text-transparent">
                   Philipus
                 </span>
@@ -26,8 +30,8 @@ const Hero = () => {
                 Software Developer & Data Scientist
               </p>
               <p className="text-lg text-gray-500 max-w-2xl">
-                Based in Melbourne, Australia • Passionate about creating innovative solutions 
-                through code and data-driven insights
+                Based in Melbourne, Australia • Passionate about creating
+                innovative solutions through code and data-driven insights
               </p>
             </div>
 
@@ -65,7 +69,10 @@ const Hero = () => {
               >
                 <Linkedin className="w-6 h-6 text-gray-600 group-hover:text-blue-600" />
               </a>
-              <div className="p-3 bg-white rounded-full shadow-md opacity-50 cursor-not-allowed" title="Coming Soon">
+              <div
+                className="p-3 bg-white rounded-full shadow-md opacity-50 cursor-not-allowed"
+                title="Coming Soon"
+              >
                 <Github className="w-6 h-6 text-gray-400" />
               </div>
             </div>
@@ -74,9 +81,11 @@ const Hero = () => {
           {/* Profile Image Placeholder */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-teal-400 rounded-2xl shadow-2xl flex items-center justify-center">
-                <div className="text-white text-6xl font-bold">PS</div>
-              </div>
+              <img
+                src={profileImage}
+                alt="Philipus Sanjaya"
+                className="w-80 h-80 rounded-2xl shadow-2xl object-cover"
+              />
               {/* Decorative Elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-orange-400 rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-blue-600 rounded-full opacity-30 animate-pulse" style={{ animationDelay: '1s' }}></div>
